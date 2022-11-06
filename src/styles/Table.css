@@ -1,0 +1,86 @@
+.table-container {
+  margin-top: 0.3rem;
+  border: 1px solid #900000;
+  height: 60%;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+thead {
+  background-color: #990000;
+  color: white;
+  position:sticky;
+  top: 0;
+  
+}
+
+th {
+  padding: 0.5%;
+  border-left: 1px solid white;
+  font-family: Inter Extra Bold, Arial, Helvetica, sans-serif;
+  font-size: 1.4vmax;
+}
+
+
+td {
+  padding: 2px 0px;
+  border-right: 1px solid white;
+}
+
+
+.id-th {
+width: 7%;
+}
+
+.product-th {
+  width: 35%;
+}
+
+.unit-th {
+width: 8%;
+}
+
+.red-line {
+    background-color: #FC9595;
+  }
+
+.yellow-line {
+  background-color: #FEE17B;
+}
+
+.white-column {
+  background-color: white;
+  color: #990000;
+  width: 12%;
+}
+
+.white-column:hover {
+  background-color: white;
+}
+
+.table-button {
+  background-color: white;
+  border-radius: 25%;
+  color: black;
+  cursor: pointer;
+  height: 10%;
+  margin: 0px 2px;
+  width: 15%;
+}
+
+.table-input {
+  border-radius: 50px;
+  border: 1px solid black;
+  text-align: center;
+  width: 50%;
+} 
+
+.selected, .selected td {
+  background-color: #f31919e8 !important;
+}

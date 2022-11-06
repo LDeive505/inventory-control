@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from "react";
+import Context from "./context/Context";
+import NavBar from "./components/NavBar";
+import Products from "./pages/Products";
+import ProductManagement from "./pages/ProductManagement";
+import ReplenishStock from "./pages/ReplenishStock";
+import ChangeLog from "./pages/ChangeLog";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import './styles/App.css';
 
 function App() {
+  const { screenSelector } = useContext(Context);
+  const { screenNumber, hasInput } = screenSelector;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <Header />
+      <NavBar />
+      {screenNumber === 0 && <Products />}
+      {screenNumber === 1 && <ReplenishStock />}
+      {screenNumber === 2 && <ChangeLog />}
+      {screenNumber === 3 && <ProductManagement />}
+      <Footer prodInfo={ hasInput }/>
     </div>
   );
 }

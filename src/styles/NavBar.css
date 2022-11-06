@@ -1,0 +1,24 @@
+.navigation-container {
+  display: flex;
+  height: 8vh;
+  margin-top: 10px;
+}
+
+.nav-button {
+  background-color: #900000;
+  border: 1px solid white;
+  color: white;
+  font-family: Inter Extra Bold, Arial, Helvetica, sans-serif;
+  font-size: 1.4vmax;
+  width: 25%; 
+}
+
+.nav-button:hover,.nav-button:focus, .nav-button:active {
+  background-color: white;
+  border: 1px solid #900000;
+  color: #900000;
+  transition: 0.5s;
+  outline: none;
+}
+
+

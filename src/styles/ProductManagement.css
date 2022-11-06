@@ -1,0 +1,110 @@
+.product-management-container {
+  height: 74vh;
+}
+
+.product-management-container input {
+  align-self: center;
+  border-radius: 48px;
+  border:1px solid black;
+  display: inline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.7vmax;
+  font-style: italic;
+  height: 30%;
+  margin: 0 3px;
+  text-align: center;
+}
+
+.product-management-container form {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 25%;
+  justify-content: center;
+}
+
+.product-management-container form select{
+  background-color: white;
+  border-radius: 67px;
+  border:1px solid black;
+  height: 30%;
+  font-size: 1.6vmax;
+  text-align: center;
+  width: 10%;
+}
+
+optgroup {
+  font-size: 1.6vmax;
+}
+
+.prices {
+  width: 31.6%;
+}
+
+#stock {
+  width: 25%;
+}
+
+#description-input {
+  width: 60%;
+}
+
+#add-button {
+  background-color: #007249;
+  border-radius: 67px;
+  color: white;
+  font-size:2vmax;
+  font-weight: bolder;
+  height: 30%;
+  width: 31.6%;
+}
+#add-button:hover {
+  background-color: #00D789;
+}
+
+.management-buttons {
+  background-color: #990000;
+  align-items: center;
+  display: flex;
+  height: 10%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.7%;
+}
+
+.management-buttons button {
+  width: 23%;
+  height: 60%;
+  font-size:1.5vmax;
+  border-radius: 50px;
+  font-weight: bolder;
+}
+
+#edit-button {
+  background-color: #FFC700;
+}
+
+#edit-button:hover {
+  background-color: #FFE58A;
+}
+
+#delete-button {
+  background-color: #FF0000;
+}
+
+#delete-button:hover {
+  background-color: #FF6767;
+}
+
+#import-button:hover {
+  background-color: rgb(199, 183, 183);
+}
+
+#export-button:hover {
+  background-color: rgb(199, 183, 183);
+}
+
+
+
+
+

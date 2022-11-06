@@ -1,0 +1,52 @@
+.import-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1%;
+}
+
+.import-area textarea {
+  width: 97%;
+  height: 85%;
+  border: 0.2rem solid #990000;
+  border-radius: 0.5rem;
+  resize: none;
+}
+
+.import-area textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.import-buttons-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1%;
+}
+
+.import-buttons-container button {
+  width: 20%;
+  padding: 1%;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5vmax;
+}
+
+#import-cancel {
+  background-color: red;
+}
+
+#import-confirm {
+  background-color: green;
+}
+
+#import-cancel:hover {
+  background-color: #FF6767;
+}
+
+#import-confirm:hover {
+  background-color:#00D789;
+}

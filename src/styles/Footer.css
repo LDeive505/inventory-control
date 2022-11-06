@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  background-color: #990000;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+}
+
+footer div, span {
+  font-family: Inter Extra Bold, Arial, Helvetica, sans-serif;
+}
+
+.date-time:nth-child(1){
+  margin-right: 15px;
+}
+
+.ocult-text {
+  color: #990000;
+  user-select: none;
+}
+
+
