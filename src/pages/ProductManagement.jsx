@@ -71,6 +71,8 @@ export default function ProductManagement() {
   }
 
   const priceValidation = (value) => {
+    if (value === '') return '0.00';
+    
     if (!value.includes('.')) {
       const newValue = stockValidation(value);
       return `${newValue}.00`;
@@ -108,6 +110,8 @@ export default function ProductManagement() {
       purchasePrice: priceValidation(formValues[3]),
       salePrice: priceValidation(formValues[4]), 
     };
+
+    console.log(typeof formValues[4]);
     form.reset();
     firstInput.current.focus();
 

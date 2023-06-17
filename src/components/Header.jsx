@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import Context from '../context/Context';
-import logoRidicula from '../icons/logo-ridicula.png';
 
 export default function Header() {
   const { screenSelector, setHeaderInput, headerInput } = useContext(Context);
@@ -19,7 +18,7 @@ export default function Header() {
           type="text"
           placeholder="Digite o nome ou código do produto que deseja buscar"
         />
-      ) : (<img src={logoRidicula} alt="logo-ridicula" />)}
+      ) : (<h1>Inventory Control Print</h1>)}
     </header>
   );
 }

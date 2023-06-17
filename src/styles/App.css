@@ -10,7 +10,14 @@ header {
   display: flex;
   justify-content: center;
   height: 12vh;
+}
 
+header h1 {
+  align-self: center;
+  color: white;
+  font-family: JosefinSans;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
 header input {
