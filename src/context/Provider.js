@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 import Context from './Context';
 import { getLocalStorage, setLocalStorage } from '../helpers/localStorageHelpers';
 import registerHistoryChange from '../helpers/recordHistory';
+import mockedList from './mockedData';
 
 function Provider({ children }) {
   const localData = getLocalStorage('productList', []);
   const localCart = getLocalStorage('cartData', []);
   const localCartItens = getLocalStorage('cartItens', []);
   const localLogData = getLocalStorage('logData', []);
-  const [productList, setProductList] = useState(localData);
+  const [productList, setProductList] = useState(mockedList);
   const [cartData, setCartData] = useState(localCart);
   const [cartItens, setCartItens] = useState(localCartItens);
   const [logData, setLogData] = useState(localLogData);
